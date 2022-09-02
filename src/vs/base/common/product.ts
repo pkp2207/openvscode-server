@@ -163,6 +163,15 @@ export interface IProductConfiguration {
 
 	// experimental
 	readonly enableSyncingProfiles?: boolean;
+	readonly gitpodPreview?: IGitpodPreviewConfiguration;
+}
+
+export interface IGitpodPreviewConfiguration {
+	host: string;
+	log?: {
+		analytics?: boolean;
+		metrics?: boolean;
+	};
 }
 
 export interface ITunnelApplicationConfig {
